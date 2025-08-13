@@ -1,81 +1,183 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Physalis Seed Information</title>
+    <title>Physalis Seeds – Planting & Care Guide</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
     <style>
         body {
-            font-family: Arial, sans-serif;
-            margin: 2rem;
-            background-color: #fefbe9;
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom right, #fff8e1, #ffecb3);
             color: #333;
-        }
-        h1 {
-            text-align: center;
-            color: #4a752c;
-        }
-        img {
-            display: block;
-            margin: 1rem auto;
-            max-width: 400px;
-            width: 100%;
-            height: auto;
-        }
-        .section {
-            margin-bottom: 2rem;
-        }
-        ul {
             line-height: 1.6;
+            overflow-x: hidden;
         }
+
+        header {
+            background: url('https://upload.wikimedia.org/wikipedia/commons/c/c6/Physalis_peruviana_fruit.jpg') no-repeat center center/cover;
+            color: white;
+            text-align: center;
+            padding: 90px 20px;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        header h1 {
+            font-size: 2.8em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+        }
+
+        header p {
+            font-size: 1.2em;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .section {
+            background: white;
+            padding: 20px;
+            margin-bottom: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            animation: fadeUp 1s ease forwards;
+            opacity: 0;
+        }
+
+        .section:nth-child(1) { animation-delay: 0.2s; }
+        .section:nth-child(2) { animation-delay: 0.4s; }
+        .section:nth-child(3) { animation-delay: 0.6s; }
+        .section:nth-child(4) { animation-delay: 0.8s; }
+        .section:nth-child(5) { animation-delay: 1s; }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 10px 0;
+        }
+
+        th, td {
+            padding: 10px;
+            border-bottom: 1px solid #eee;
+        }
+
+        th {
+            text-align: left;
+            background-color: #fff3e0;
+            color: #e65100;
+        }
+
+        table tr:hover {
+            background-color: #fffaf3;
+        }
+
+        h2 {
+            color: #e65100;
+            margin-top: 0;
+        }
+
+        ul li, ol li {
+            margin-bottom: 8px;
+        }
+
+        ul li:hover, ol li:hover {
+            background: #fffaf3;
+            border-radius: 6px;
+            padding: 5px;
+            transition: background 0.3s ease;
+        }
+
         footer {
             text-align: center;
-            font-size: 0.9rem;
-            color: #777;
+            padding: 15px;
+            background-color: #e65100;
+            color: white;
+            font-size: 0.9em;
+            letter-spacing: 0.5px;
+        }
+
+        img {
+            max-width: 100%;
+            border-radius: 8px;
+            margin-top: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        img:hover {
+            transform: scale(1.03);
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes fadeUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
         }
     </style>
 </head>
 <body>
-    <h1>Physalis Seed Information</h1>
-    <img src="IMG_6009.jpeg" alt="Physalis Fruit">
+
+<header>
+    <h1>Physalis Seeds</h1>
+    <p>Complete Guide for Growing Physalis peruviana</p>
+</header>
+
+<div class="container">
 
     <div class="section">
-        <h2>Seed Storage</h2>
-        <p><strong>Storing Date:</strong> 15 June 2025</p>
-        <p><strong>Source:</strong> From ripe fruit bought from Lidl, Linz</p>
+        <h2>Seed Details</h2>
+        <p><strong>Collection Date:</strong> 15 June 2025</p>
+        <p><strong>Source:</strong> Ripe fruit bought from Lidl, Austria</p>
+        <p><strong>Storage Advice:</strong> Store seeds in a cool, dry place in an airtight container. Avoid direct sunlight and excessive moisture to maintain viability for up to 1 year.</p>
     </div>
 
     <div class="section">
-        <h2>How to Plant Physalis Seeds</h2>
+        <h2>Quick Facts</h2>
+        <table>
+            <tr><th>Scientific Name</th><td>Physalis peruviana</td></tr>
+            <tr><th>Family</th><td>Solanaceae</td></tr>
+            <tr><th>Plant Type</th><td>Perennial in warm climates, annual in cooler climates</td></tr>
+            <tr><th>Fruit Color</th><td>Golden orange</td></tr>
+            <tr><th>Taste</th><td>Sweet, tangy, tropical</td></tr>
+            <tr><th>Uses</th><td>Eaten fresh, in jams, desserts, salads</td></tr>
+        </table>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/2/24/Physalis_peruviana_2.jpg" alt="Physalis Fruit">
+    </div>
+
+    <div class="section">
+        <h2>Planting Instructions</h2>
+        <ol>
+            <li><strong>Seed Preparation:</strong> Physalis seeds do not require cold stratification. Sow directly indoors in seed trays 6–8 weeks before the last frost date.</li>
+            <li><strong>Sowing Depth:</strong> Plant seeds about 0.5 cm deep in moist, well-draining seed compost.</li>
+            <li><strong>Germination:</strong> Keep soil at 20–25°C and ensure consistent moisture. Germination usually takes 7–14 days.</li>
+            <li><strong>Transplanting:</strong> Once seedlings have 2–3 true leaves, transplant into larger pots or directly into the garden after frost risk has passed.</li>
+            <li><strong>Spacing:</strong> Plant 45–60 cm apart in full sun.</li>
+        </ol>
+    </div>
+
+    <div class="section">
+        <h2>Care & Maintenance</h2>
         <ul>
-            <li><strong>Sowing Depth:</strong> 0.5 cm</li>
-            <li><strong>Spacing:</strong> 60 cm between plants</li>
-            <li><strong>Indoor/Outdoor:</strong> Start indoors 6–8 weeks before last frost; transplant outdoors after frost</li>
-            <li><strong>Water Needs:</strong> Keep soil consistently moist, but not soggy</li>
-            <li><strong>Soil Mix:</strong> Light, well-draining soil (pH 5.5–7.0)</li>
-            <li><strong>Temperature for Germination:</strong> 20–25°C</li>
-            <li><strong>Humidity:</strong> Moderate (40–60%)</li>
-            <li><strong>Sunlight:</strong> Full sun (at least 6 hours/day)</li>
+            <li><strong>Sunlight:</strong> Prefers full sun for maximum fruit production.</li>
+            <li><strong>Watering:</strong> Keep soil evenly moist but not waterlogged.</li>
+            <li><strong>Fertilizing:</strong> Apply a balanced fertilizer every 4–6 weeks during the growing season.</li>
+            <li><strong>Support:</strong> Use stakes or cages to support heavy fruit-laden branches.</li>
+            <li><strong>Pest Control:</strong> Watch for whiteflies, aphids, and spider mites.</li>
         </ul>
     </div>
 
-    <div class="section">
-        <h2>Best Areas in Pakistan for Physalis</h2>
-        <p>Physalis grows well in cooler, moderate climates. Suitable regions in Pakistan include:</p>
-        <ul>
-            <li>Islamabad</li>
-            <li>Murree</li>
-            <li>Abbottabad</li>
-            <li>Swat</li>
-            <li>Quetta</li>
-            <li>Northern Punjab (moderate summer, not frost-prone)</li>
-        </ul>
-        <p>Avoid extreme heat or frost-prone zones like interior Sindh during peak summer.</p>
-    </div>
-
-    <footer>
-        © 2025 Umar Wahab | Physalis Project
-    </footer>
-</body>
-</html>
+    <div class="sectio
